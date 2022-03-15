@@ -44,10 +44,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseBrewingMachine.cs" />
+    <Compile Include="BrewingType\Coffee.cs" />
+    <Compile Include="BrewingType\Tea.cs" />
     <Compile Include="CoffeeMachine.cs" />
-    <Compile Include="Interfaces\IBrewingType.cs" />
+    <Compile Include="Containers\MediumBrewingMachineLiquidContainer.cs" />
+    <Compile Include="Containers\MediumBrewingMachineSolidContainer.cs" />
+    <Compile Include="EspressoMachine.cs" />
+    <Compile Include="Filters\MetalFilter.cs" />
+    <Compile Include="Filters\PapirFilter.cs" />
+    <Compile Include="Interfaces\ILiquidAndSolidMachine.cs" />
+    <Compile Include="Interfaces\ISolidType.cs" />
+    <Compile Include="Interfaces\IContainer.cs" />
     <Compile Include="Interfaces\IFilterType.cs" />
     <Compile Include="Interfaces\ILiquidType.cs" />
+    <Compile Include="Liquids\Water.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeaMachine.cs" />

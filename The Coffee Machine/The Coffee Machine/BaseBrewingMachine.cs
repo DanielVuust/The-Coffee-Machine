@@ -10,21 +10,11 @@ namespace The_Coffee_Machine
     public abstract class BaseBrewingMachine
     {
         private string machineName;
-        private IBrewingType brewingType;
-        private ILiquidType liquidType;
         private IFilterType filter;
 
         public string MachineName
         {
             get { return machineName; }
-        }
-        public IBrewingType BrewingType
-        {
-            get { return BrewingType; }
-        } 
-        public ILiquidType LiquidType
-        {
-            get { return liquidType; }
         }
 
         public IFilterType Filter
@@ -33,12 +23,10 @@ namespace The_Coffee_Machine
             set { filter = value; }
         }
 
-        public BaseBrewingMachine(string machineName, IBrewingType brewingType, IFilterType filter, ILiquidType liquidType)
+        public BaseBrewingMachine(string machineName, IFilterType filter)
         {
             this.machineName = machineName;
-            this.brewingType = brewingType;
             this.filter = filter;
-            this.liquidType = liquidType;
         }
 
         public abstract void StartBrewing();

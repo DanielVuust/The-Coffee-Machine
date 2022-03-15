@@ -8,6 +8,6 @@ namespace The_Coffee_Machine
 {
     public interface ILiquidType
     {
-        string LiquidType { get; set; }
+        string LiquidType { get; }
     }
 }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace The_Coffee_Machine.Interfaces
 {
-    public interface IFilterType
+    interface ILiquidAndSolidMachine
     {
-        string FilterType { get; }
+        void AddLiquidInMlToContainer(int mlLiquid);
+        void AddSolidInGramsToContainer(int gramsSolid);
     }
 }

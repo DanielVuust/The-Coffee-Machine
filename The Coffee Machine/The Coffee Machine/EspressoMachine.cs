@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using The_Coffee_Machine.BrewingType;
@@ -12,7 +11,7 @@ using The_Coffee_Machine.Liquids;
 
 namespace The_Coffee_Machine
 {
-    class CoffeeMachine : BaseBrewingMachine, ILiquidAndSolidMachine
+    class EspressoMachine : BaseBrewingMachine, ILiquidAndSolidMachine
     {
         private const string machineName = "CoffeMachine";
         private const int liquidServingSizeInMl = 20;
@@ -20,7 +19,7 @@ namespace The_Coffee_Machine
 
         private MediumBrewingMachineSolidContainer solidContainer;
         private MediumBrewingMachineLiquidContainer liquidContainer;
-        public CoffeeMachine() 
+        public EspressoMachine()
             : base(machineName, new PapirFilter())
         {
             solidContainer = new MediumBrewingMachineSolidContainer(new Coffee());
@@ -29,12 +28,11 @@ namespace The_Coffee_Machine
 
         public override void StartBrewing()
         {
-            while (this.liquidContainer.ContainerCurrentLiquidInMl > liquidServingSizeInMl && this.solidContainer.ContainerCurrentInGrams > solidUsagePerServingInGrams)
+            if (this.liquidContainer.ContainerCurrentLiquidInMl > liquidServingSizeInMl && this.solidContainer.ContainerCurrentInGrams > solidUsagePerServingInGrams)
             {
                 liquidContainer.ContainerCurrentLiquidInMl -= liquidServingSizeInMl;
                 Console.WriteLine("20 ml of coffee has been brewed");
             }
-            Console.WriteLine("All available coffee has now been brewed");
         }
         public void AddLiquidInMlToContainer(int mlLiquid)
         {

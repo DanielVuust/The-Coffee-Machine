@@ -1,0 +1,7 @@
+C:\Users\danie\source\repos\C#\The-Coffee-Machine\The Coffee Machine\The Coffee Machine\bin\Debug\The Coffee Machine.exe.config
+C:\Users\danie\source\repos\C#\The-Coffee-Machine\The Coffee Machine\The Coffee Machine\bin\Debug\The Coffee Machine.exe
+C:\Users\danie\source\repos\C#\The-Coffee-Machine\The Coffee Machine\The Coffee Machine\bin\Debug\The Coffee Machine.pdb
+C:\Users\danie\source\repos\C#\The-Coffee-Machine\The Coffee Machine\The Coffee Machine\obj\Debug\The Coffee Machine.csprojAssemblyReference.cache
+C:\Users\danie\source\repos\C#\The-Coffee-Machine\The Coffee Machine\The Coffee Machine\obj\Debug\The Coffee Machine.csproj.CoreCompileInputs.cache
+C:\Users\danie\source\repos\C#\The-Coffee-Machine\The Coffee Machine\The Coffee Machine\obj\Debug\The Coffee Machine.exe
+C:\Users\danie\source\repos\C#\The-Coffee-Machine\The Coffee Machine\The Coffee Machine\obj\Debug\The Coffee Machine.pdb

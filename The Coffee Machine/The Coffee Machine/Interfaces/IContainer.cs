@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace The_Coffee_Machine.Interfaces
 {
-    public interface IFilterType
+    public interface IContainer
     {
-        string FilterType { get; }
+        bool IsFull { get; set; }
     }
 }

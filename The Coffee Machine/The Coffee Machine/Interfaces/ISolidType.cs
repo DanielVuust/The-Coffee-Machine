@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace The_Coffee_Machine.Interfaces
 {
-    public interface IBrewingType
+    public interface ISolidType
     {
-        string BrewingType { get; set; }
+        string SolidType { get; }
     }
 }
